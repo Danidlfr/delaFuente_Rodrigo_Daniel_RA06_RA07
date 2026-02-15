@@ -7,10 +7,10 @@ public class Videojuego {
     private String titulo;
     private String genero;
     private String plataforma;
-    private BigDecimal precioReserva;
+    private Double precioReserva;
     private String imagen;
 
-    public Videojuego(int id, String titulo, String genero, String plataforma, BigDecimal precioReserva, String imagen) {
+    public Videojuego(int id, String titulo, String genero, String plataforma, Double precioReserva, String imagen) {
         this.id = id;
         this.titulo = titulo;
         this.genero = genero;
@@ -23,6 +23,6 @@ public class Videojuego {
     public String getTitulo() { return titulo; }
     public String getGenero() { return genero; }
     public String getPlataforma() { return plataforma; }
-    public BigDecimal getPrecioReserva() { return precioReserva; }
+    public Double getPrecioReserva() { return precioReserva; }
     public String getImagen() { return imagen; }
 }
