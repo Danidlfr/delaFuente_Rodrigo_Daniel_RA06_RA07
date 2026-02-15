@@ -6,10 +6,10 @@ public class Reserva {
     private int id;
     private int idUsuario;
     private int idJuego;
-    private LocalDate fechaReserva;
+    private String fechaReserva;
     private String estado;
 
-    public Reserva(int id, int idUsuario, int idJuego, LocalDate fechaReserva, String estado) {
+    public Reserva(int id, int idUsuario, int idJuego, String fechaReserva, String estado) {
         this.id = id;
         this.idUsuario = idUsuario;
         this.idJuego = idJuego;
@@ -20,6 +20,6 @@ public class Reserva {
     public int getId() { return id; }
     public int getIdUsuario() { return idUsuario; }
     public int getIdJuego() { return idJuego; }
-    public LocalDate getFechaReserva() { return fechaReserva; }
+    public String getFechaReserva() { return fechaReserva; }
     public String getEstado() { return estado; }
 }
